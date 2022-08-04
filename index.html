@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pc Games</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            background: url(pcbg.webp) no-repeat center center/cover;
+            position: absolute;
+            content: "";
+            top: 0px;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #logo{
+            width: 8rem;
+            height: 8rem;
+            border-radius: 140px;
+            margin-right: 8px;
+        }
+        .pic{
+            width: 22rem;
+            height: 16rem;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        .games{
+            border: 2px solid white;
+            width: 24rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #games{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 13rem;
+            flex-wrap: wrap;
+        }
+        .click{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            border: 2px solid white;
+            padding:2px 4px;
+            border-radius: 4px;
+        }
+        .click:hover{
+            text-decoration: underline;
+        }
+        p{
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="IMG_20220321_140059_771.jpg" alt="">
+        <span>SMASHER787</span>
+    </header>
+    <section id="games">
+        <div class="games">
+            <img class="pic" src="sp.jpg" alt="">
+            <p>Single Player</p>
+            <a href="https://smasher787.github.io/sp/" class="click">Click Here</a>
+        </div>
+        <div class="games">
+            <img class="pic" src="mp.jpg" alt="">
+            <p>Multiplayer</p>
+            <a href="https://smasher787.github.io/mp/" class="click">Click Here</a>
+        </div>
+    </section>
+</body>
+</html>
